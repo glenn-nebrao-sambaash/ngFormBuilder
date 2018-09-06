@@ -84,7 +84,7 @@ module.exports = [
       var parent = $scope.parent || $scope.component;
       if (parent.type !== 'form' && parent.type !== 'resource' && component.isNew && component.key) {
         $scope.parentKey = parent.key;
-        component.key = $scope.parentKey + _upperFirst(component.key);
+        component.key = ($scope.parentKey||'') + _upperFirst(component.key);
       } else {
         $scope.parentKey = '';
       }
