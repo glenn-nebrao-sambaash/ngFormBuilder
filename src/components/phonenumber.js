@@ -28,6 +28,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#phonenumber'
@@ -36,7 +40,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/phoneNumber/display.html',
         '<ng-form>' +
@@ -75,6 +80,12 @@ module.exports = function(app) {
           '<form-builder-option property="validate.customMessage"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

@@ -1203,7 +1203,7 @@ function uniqueKey(map, base) {
   }
   return newKey;
 }
-},{"./jsonlogic/operators":2,"json-logic-js":4,"jstimezonedetect":5,"lodash":210,"moment-timezone/moment-timezone":229,"native-promise-only":231,"whatwg-fetch":235}],4:[function(_dereq_,module,exports){
+},{"./jsonlogic/operators":2,"json-logic-js":4,"jstimezonedetect":5,"lodash":210,"moment-timezone/moment-timezone":230,"native-promise-only":232,"whatwg-fetch":236}],4:[function(_dereq_,module,exports){
 /* globals define,module */
 /*
 Using a Universal Module Loader that should be browser, require, and AMD friendly
@@ -5026,7 +5026,7 @@ function baseMergeDeep(object, source, key, srcIndex, mergeFunc, customizer, sta
 
 module.exports = baseMergeDeep;
 
-},{"./_assignMergeValue":31,"./_cloneBuffer":86,"./_cloneTypedArray":90,"./_copyArray":91,"./_initCloneObject":130,"./_safeGet":160,"./isArguments":193,"./isArray":194,"./isArrayLikeObject":196,"./isBuffer":197,"./isFunction":198,"./isObject":202,"./isPlainObject":204,"./isTypedArray":207,"./toPlainObject":224}],69:[function(_dereq_,module,exports){
+},{"./_assignMergeValue":31,"./_cloneBuffer":86,"./_cloneTypedArray":90,"./_copyArray":91,"./_initCloneObject":130,"./_safeGet":160,"./isArguments":193,"./isArray":194,"./isArrayLikeObject":196,"./isBuffer":197,"./isFunction":198,"./isObject":202,"./isPlainObject":204,"./isTypedArray":207,"./toPlainObject":225}],69:[function(_dereq_,module,exports){
 var baseGet = _dereq_('./_baseGet'),
     baseSet = _dereq_('./_baseSet'),
     castPath = _dereq_('./_castPath');
@@ -5394,7 +5394,7 @@ function castPath(value, object) {
 
 module.exports = castPath;
 
-},{"./_isKey":134,"./_stringToPath":173,"./isArray":194,"./toString":225}],84:[function(_dereq_,module,exports){
+},{"./_isKey":134,"./_stringToPath":173,"./isArray":194,"./toString":226}],84:[function(_dereq_,module,exports){
 var baseSlice = _dereq_('./_baseSlice');
 
 /**
@@ -5812,7 +5812,7 @@ function createCaseFirst(methodName) {
 
 module.exports = createCaseFirst;
 
-},{"./_castSlice":84,"./_hasUnicode":121,"./_stringToArray":172,"./toString":225}],101:[function(_dereq_,module,exports){
+},{"./_castSlice":84,"./_hasUnicode":121,"./_stringToArray":172,"./toString":226}],101:[function(_dereq_,module,exports){
 var arrayReduce = _dereq_('./_arrayReduce'),
     deburr = _dereq_('./deburr'),
     words = _dereq_('./words');
@@ -5838,7 +5838,7 @@ function createCompounder(callback) {
 
 module.exports = createCompounder;
 
-},{"./_arrayReduce":27,"./deburr":184,"./words":228}],102:[function(_dereq_,module,exports){
+},{"./_arrayReduce":27,"./deburr":184,"./words":229}],102:[function(_dereq_,module,exports){
 var baseRange = _dereq_('./_baseRange'),
     isIterateeCall = _dereq_('./_isIterateeCall'),
     toFinite = _dereq_('./toFinite');
@@ -5870,7 +5870,7 @@ function createRange(fromRight) {
 
 module.exports = createRange;
 
-},{"./_baseRange":73,"./_isIterateeCall":133,"./toFinite":222}],103:[function(_dereq_,module,exports){
+},{"./_baseRange":73,"./_isIterateeCall":133,"./toFinite":223}],103:[function(_dereq_,module,exports){
 var basePropertyOf = _dereq_('./_basePropertyOf');
 
 /** Used to map Latin Unicode letters to basic Latin letters. */
@@ -6444,7 +6444,7 @@ var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
 
 module.exports = getSymbols;
 
-},{"./_arrayFilter":21,"./stubArray":220}],117:[function(_dereq_,module,exports){
+},{"./_arrayFilter":21,"./stubArray":221}],117:[function(_dereq_,module,exports){
 var arrayPush = _dereq_('./_arrayPush'),
     getPrototype = _dereq_('./_getPrototype'),
     getSymbols = _dereq_('./_getSymbols'),
@@ -6471,7 +6471,7 @@ var getSymbolsIn = !nativeGetSymbols ? stubArray : function(object) {
 
 module.exports = getSymbolsIn;
 
-},{"./_arrayPush":26,"./_getPrototype":114,"./_getSymbols":116,"./stubArray":220}],118:[function(_dereq_,module,exports){
+},{"./_arrayPush":26,"./_getPrototype":114,"./_getSymbols":116,"./stubArray":221}],118:[function(_dereq_,module,exports){
 var DataView = _dereq_('./_DataView'),
     Map = _dereq_('./_Map'),
     Promise = _dereq_('./_Promise'),
@@ -8105,7 +8105,7 @@ function capitalize(string) {
 
 module.exports = capitalize;
 
-},{"./toString":225,"./upperFirst":226}],181:[function(_dereq_,module,exports){
+},{"./toString":226,"./upperFirst":227}],181:[function(_dereq_,module,exports){
 var baseClone = _dereq_('./_baseClone');
 
 /** Used to compose bitmasks for cloning. */
@@ -8249,7 +8249,7 @@ function deburr(string) {
 
 module.exports = deburr;
 
-},{"./_deburrLetter":103,"./toString":225}],185:[function(_dereq_,module,exports){
+},{"./_deburrLetter":103,"./toString":226}],185:[function(_dereq_,module,exports){
 var baseDifference = _dereq_('./_baseDifference'),
     baseFlatten = _dereq_('./_baseFlatten'),
     baseRest = _dereq_('./_baseRest'),
@@ -8682,7 +8682,7 @@ var isBuffer = nativeIsBuffer || stubFalse;
 
 module.exports = isBuffer;
 
-},{"./_root":159,"./stubFalse":221}],198:[function(_dereq_,module,exports){
+},{"./_root":159,"./stubFalse":222}],198:[function(_dereq_,module,exports){
 var baseGetTag = _dereq_('./_baseGetTag'),
     isObject = _dereq_('./isObject');
 
@@ -26640,6 +26640,37 @@ function reject(collection, predicate) {
 module.exports = reject;
 
 },{"./_arrayFilter":21,"./_baseFilter":42,"./_baseIteratee":61,"./isArray":194,"./negate":214}],220:[function(_dereq_,module,exports){
+var createCompounder = _dereq_('./_createCompounder'),
+    upperFirst = _dereq_('./upperFirst');
+
+/**
+ * Converts `string` to
+ * [start case](https://en.wikipedia.org/wiki/Letter_case#Stylistic_or_specialised_usage).
+ *
+ * @static
+ * @memberOf _
+ * @since 3.1.0
+ * @category String
+ * @param {string} [string=''] The string to convert.
+ * @returns {string} Returns the start cased string.
+ * @example
+ *
+ * _.startCase('--foo-bar--');
+ * // => 'Foo Bar'
+ *
+ * _.startCase('fooBar');
+ * // => 'Foo Bar'
+ *
+ * _.startCase('__FOO_BAR__');
+ * // => 'FOO BAR'
+ */
+var startCase = createCompounder(function(result, word, index) {
+  return result + (index ? ' ' : '') + upperFirst(word);
+});
+
+module.exports = startCase;
+
+},{"./_createCompounder":101,"./upperFirst":227}],221:[function(_dereq_,module,exports){
 /**
  * This method returns a new empty array.
  *
@@ -26664,7 +26695,7 @@ function stubArray() {
 
 module.exports = stubArray;
 
-},{}],221:[function(_dereq_,module,exports){
+},{}],222:[function(_dereq_,module,exports){
 /**
  * This method returns `false`.
  *
@@ -26684,7 +26715,7 @@ function stubFalse() {
 
 module.exports = stubFalse;
 
-},{}],222:[function(_dereq_,module,exports){
+},{}],223:[function(_dereq_,module,exports){
 var toNumber = _dereq_('./toNumber');
 
 /** Used as references for various `Number` constants. */
@@ -26728,7 +26759,7 @@ function toFinite(value) {
 
 module.exports = toFinite;
 
-},{"./toNumber":223}],223:[function(_dereq_,module,exports){
+},{"./toNumber":224}],224:[function(_dereq_,module,exports){
 var isObject = _dereq_('./isObject'),
     isSymbol = _dereq_('./isSymbol');
 
@@ -26796,7 +26827,7 @@ function toNumber(value) {
 
 module.exports = toNumber;
 
-},{"./isObject":202,"./isSymbol":206}],224:[function(_dereq_,module,exports){
+},{"./isObject":202,"./isSymbol":206}],225:[function(_dereq_,module,exports){
 var copyObject = _dereq_('./_copyObject'),
     keysIn = _dereq_('./keysIn');
 
@@ -26830,7 +26861,7 @@ function toPlainObject(value) {
 
 module.exports = toPlainObject;
 
-},{"./_copyObject":92,"./keysIn":209}],225:[function(_dereq_,module,exports){
+},{"./_copyObject":92,"./keysIn":209}],226:[function(_dereq_,module,exports){
 var baseToString = _dereq_('./_baseToString');
 
 /**
@@ -26860,7 +26891,7 @@ function toString(value) {
 
 module.exports = toString;
 
-},{"./_baseToString":79}],226:[function(_dereq_,module,exports){
+},{"./_baseToString":79}],227:[function(_dereq_,module,exports){
 var createCaseFirst = _dereq_('./_createCaseFirst');
 
 /**
@@ -26884,7 +26915,7 @@ var upperFirst = createCaseFirst('toUpperCase');
 
 module.exports = upperFirst;
 
-},{"./_createCaseFirst":100}],227:[function(_dereq_,module,exports){
+},{"./_createCaseFirst":100}],228:[function(_dereq_,module,exports){
 var baseDifference = _dereq_('./_baseDifference'),
     baseRest = _dereq_('./_baseRest'),
     isArrayLikeObject = _dereq_('./isArrayLikeObject');
@@ -26917,7 +26948,7 @@ var without = baseRest(function(array, values) {
 
 module.exports = without;
 
-},{"./_baseDifference":40,"./_baseRest":74,"./isArrayLikeObject":196}],228:[function(_dereq_,module,exports){
+},{"./_baseDifference":40,"./_baseRest":74,"./isArrayLikeObject":196}],229:[function(_dereq_,module,exports){
 var asciiWords = _dereq_('./_asciiWords'),
     hasUnicodeWord = _dereq_('./_hasUnicodeWord'),
     toString = _dereq_('./toString'),
@@ -26954,7 +26985,7 @@ function words(string, pattern, guard) {
 
 module.exports = words;
 
-},{"./_asciiWords":30,"./_hasUnicodeWord":122,"./_unicodeWords":177,"./toString":225}],229:[function(_dereq_,module,exports){
+},{"./_asciiWords":30,"./_hasUnicodeWord":122,"./_unicodeWords":177,"./toString":226}],230:[function(_dereq_,module,exports){
 //! moment-timezone.js
 //! version : 0.5.21
 //! Copyright (c) JS Foundation and other contributors
@@ -27569,7 +27600,7 @@ module.exports = words;
 	return moment;
 }));
 
-},{"moment":230}],230:[function(_dereq_,module,exports){
+},{"moment":231}],231:[function(_dereq_,module,exports){
 //! moment.js
 
 ;(function (global, factory) {
@@ -32077,7 +32108,7 @@ module.exports = words;
 
 })));
 
-},{}],231:[function(_dereq_,module,exports){
+},{}],232:[function(_dereq_,module,exports){
 (function (global,setImmediate){
 /*! Native Promise Only
     v0.8.1 (c) Kyle Simpson
@@ -32454,7 +32485,7 @@ module.exports = words;
 });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},_dereq_("timers").setImmediate)
-},{"timers":233}],232:[function(_dereq_,module,exports){
+},{"timers":234}],233:[function(_dereq_,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -32640,7 +32671,7 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}],233:[function(_dereq_,module,exports){
+},{}],234:[function(_dereq_,module,exports){
 (function (setImmediate,clearImmediate){
 var nextTick = _dereq_('process/browser.js').nextTick;
 var apply = Function.prototype.apply;
@@ -32719,9 +32750,9 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   delete immediateIds[id];
 };
 }).call(this,_dereq_("timers").setImmediate,_dereq_("timers").clearImmediate)
-},{"process/browser.js":232,"timers":233}],234:[function(_dereq_,module,exports){
+},{"process/browser.js":233,"timers":234}],235:[function(_dereq_,module,exports){
 !function(e,r){"object"==typeof exports&&"object"==typeof module?module.exports=r():"function"==typeof define&&define.amd?define([],r):"object"==typeof exports?exports.vanillaTextMask=r():e.vanillaTextMask=r()}(this,function(){return function(e){function r(n){if(t[n])return t[n].exports;var o=t[n]={exports:{},id:n,loaded:!1};return e[n].call(o.exports,o,o.exports,r),o.loaded=!0,o.exports}var t={};return r.m=e,r.c=t,r.p="",r(0)}([function(e,r,t){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function o(e){var r=e.inputElement,t=(0,u.default)(e),n=function(e){var r=e.target.value;return t.update(r)};return r.addEventListener("input",n),t.update(r.value),{textMaskInputElement:t,destroy:function(){r.removeEventListener("input",n)}}}Object.defineProperty(r,"__esModule",{value:!0}),r.conformToMask=void 0,r.maskInput=o;var i=t(2);Object.defineProperty(r,"conformToMask",{enumerable:!0,get:function(){return n(i).default}});var a=t(5),u=n(a);r.default=o},function(e,r){"use strict";Object.defineProperty(r,"__esModule",{value:!0}),r.placeholderChar="_",r.strFunction="function"},function(e,r,t){"use strict";function n(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:l,r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:u,t=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{};if(!(0,i.isArray)(r)){if(("undefined"==typeof r?"undefined":o(r))!==a.strFunction)throw new Error("Text-mask:conformToMask; The mask property must be an array.");r=r(e,t),r=(0,i.processCaretTraps)(r).maskWithoutCaretTraps}var n=t.guide,s=void 0===n||n,f=t.previousConformedValue,d=void 0===f?l:f,c=t.placeholderChar,p=void 0===c?a.placeholderChar:c,v=t.placeholder,h=void 0===v?(0,i.convertMaskToPlaceholder)(r,p):v,m=t.currentCaretPosition,y=t.keepCharPositions,g=s===!1&&void 0!==d,b=e.length,C=d.length,k=h.length,x=r.length,P=b-C,T=P>0,O=m+(T?-P:0),M=O+Math.abs(P);if(y===!0&&!T){for(var w=l,S=O;S<M;S++)h[S]===p&&(w+=p);e=e.slice(0,O)+w+e.slice(O,b)}for(var _=e.split(l).map(function(e,r){return{char:e,isNew:r>=O&&r<M}}),j=b-1;j>=0;j--){var V=_[j].char;if(V!==p){var A=j>=O&&C===x;V===h[A?j-P:j]&&_.splice(j,1)}}var E=l,N=!1;e:for(var F=0;F<k;F++){var I=h[F];if(I===p){if(_.length>0)for(;_.length>0;){var L=_.shift(),R=L.char,J=L.isNew;if(R===p&&g!==!0){E+=p;continue e}if(r[F].test(R)){if(y===!0&&J!==!1&&d!==l&&s!==!1&&T){for(var W=_.length,q=null,z=0;z<W;z++){var B=_[z];if(B.char!==p&&B.isNew===!1)break;if(B.char===p){q=z;break}}null!==q?(E+=R,_.splice(q,1)):F--}else E+=R;continue e}N=!0}g===!1&&(E+=h.substr(F,k));break}E+=I}if(g&&T===!1){for(var D=null,G=0;G<E.length;G++)h[G]===p&&(D=G);E=null!==D?E.substr(0,D+1):l}return{conformedValue:E,meta:{someCharsRejected:N}}}Object.defineProperty(r,"__esModule",{value:!0});var o="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};r.default=n;var i=t(3),a=t(1),u=[],l=""},function(e,r,t){"use strict";function n(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:s,r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:l.placeholderChar;if(!o(e))throw new Error("Text-mask:convertMaskToPlaceholder; The mask property must be an array.");if(e.indexOf(r)!==-1)throw new Error("Placeholder character must not be used as part of the mask. Please specify a character that is not present in your mask as your placeholder character.\n\n"+("The placeholder character that was received is: "+JSON.stringify(r)+"\n\n")+("The mask that was received is: "+JSON.stringify(e)));return e.map(function(e){return e instanceof RegExp?r:e}).join("")}function o(e){return Array.isArray&&Array.isArray(e)||e instanceof Array}function i(e){return"string"==typeof e||e instanceof String}function a(e){return"number"==typeof e&&void 0===e.length&&!isNaN(e)}function u(e){for(var r=[],t=void 0;t=e.indexOf(f),t!==-1;)r.push(t),e.splice(t,1);return{maskWithoutCaretTraps:e,indexes:r}}Object.defineProperty(r,"__esModule",{value:!0}),r.convertMaskToPlaceholder=n,r.isArray=o,r.isString=i,r.isNumber=a,r.processCaretTraps=u;var l=t(1),s=[],f="[]"},function(e,r){"use strict";function t(e){var r=e.previousConformedValue,t=void 0===r?o:r,i=e.previousPlaceholder,a=void 0===i?o:i,u=e.currentCaretPosition,l=void 0===u?0:u,s=e.conformedValue,f=e.rawValue,d=e.placeholderChar,c=e.placeholder,p=e.indexesOfPipedChars,v=void 0===p?n:p,h=e.caretTrapIndexes,m=void 0===h?n:h;if(0===l||!f.length)return 0;var y=f.length,g=t.length,b=c.length,C=s.length,k=y-g,x=k>0,P=0===g,T=k>1&&!x&&!P;if(T)return l;var O=x&&(t===s||s===c),M=0,w=void 0,S=void 0;if(O)M=l-k;else{var _=s.toLowerCase(),j=f.toLowerCase(),V=j.substr(0,l).split(o),A=V.filter(function(e){return _.indexOf(e)!==-1});S=A[A.length-1];var E=a.substr(0,A.length).split(o).filter(function(e){return e!==d}).length,N=c.substr(0,A.length).split(o).filter(function(e){return e!==d}).length,F=N!==E,I=void 0!==a[A.length-1]&&void 0!==c[A.length-2]&&a[A.length-1]!==d&&a[A.length-1]!==c[A.length-1]&&a[A.length-1]===c[A.length-2];!x&&(F||I)&&E>0&&c.indexOf(S)>-1&&void 0!==f[l]&&(w=!0,S=f[l]);for(var L=v.map(function(e){return _[e]}),R=L.filter(function(e){return e===S}).length,J=A.filter(function(e){return e===S}).length,W=c.substr(0,c.indexOf(d)).split(o).filter(function(e,r){return e===S&&f[r]!==e}).length,q=W+J+R+(w?1:0),z=0,B=0;B<C;B++){var D=_[B];if(M=B+1,D===S&&z++,z>=q)break}}if(x){for(var G=M,H=M;H<=b;H++)if(c[H]===d&&(G=H),c[H]===d||m.indexOf(H)!==-1||H===b)return G}else if(w){for(var K=M-1;K>=0;K--)if(s[K]===S||m.indexOf(K)!==-1||0===K)return K}else for(var Q=M;Q>=0;Q--)if(c[Q-1]===d||m.indexOf(Q)!==-1||0===Q)return Q}Object.defineProperty(r,"__esModule",{value:!0}),r.default=t;var n=[],o=""},function(e,r,t){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function o(e){var r={previousConformedValue:void 0,previousPlaceholder:void 0};return{state:r,update:function(t){var n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:e,o=n.inputElement,s=n.mask,d=n.guide,m=n.pipe,g=n.placeholderChar,b=void 0===g?v.placeholderChar:g,C=n.keepCharPositions,k=void 0!==C&&C,x=n.showMask,P=void 0!==x&&x;if("undefined"==typeof t&&(t=o.value),t!==r.previousConformedValue){("undefined"==typeof s?"undefined":l(s))===y&&void 0!==s.pipe&&void 0!==s.mask&&(m=s.pipe,s=s.mask);var T=void 0,O=void 0;if(s instanceof Array&&(T=(0,p.convertMaskToPlaceholder)(s,b)),s!==!1){var M=a(t),w=o.selectionEnd,S=r.previousConformedValue,_=r.previousPlaceholder,j=void 0;if(("undefined"==typeof s?"undefined":l(s))===v.strFunction){if(O=s(M,{currentCaretPosition:w,previousConformedValue:S,placeholderChar:b}),O===!1)return;var V=(0,p.processCaretTraps)(O),A=V.maskWithoutCaretTraps,E=V.indexes;O=A,j=E,T=(0,p.convertMaskToPlaceholder)(O,b)}else O=s;var N={previousConformedValue:S,guide:d,placeholderChar:b,pipe:m,placeholder:T,currentCaretPosition:w,keepCharPositions:k},F=(0,c.default)(M,O,N),I=F.conformedValue,L=("undefined"==typeof m?"undefined":l(m))===v.strFunction,R={};L&&(R=m(I,u({rawValue:M},N)),R===!1?R={value:S,rejected:!0}:(0,p.isString)(R)&&(R={value:R}));var J=L?R.value:I,W=(0,f.default)({previousConformedValue:S,previousPlaceholder:_,conformedValue:J,placeholder:T,rawValue:M,currentCaretPosition:w,placeholderChar:b,indexesOfPipedChars:R.indexesOfPipedChars,caretTrapIndexes:j}),q=J===T&&0===W,z=P?T:h,B=q?z:J;r.previousConformedValue=B,r.previousPlaceholder=T,o.value!==B&&(o.value=B,i(o,W))}}}}}function i(e,r){document.activeElement===e&&(g?b(function(){return e.setSelectionRange(r,r,m)},0):e.setSelectionRange(r,r,m))}function a(e){if((0,p.isString)(e))return e;if((0,p.isNumber)(e))return String(e);if(void 0===e||null===e)return h;throw new Error("The 'value' provided to Text Mask needs to be a string or a number. The value received was:\n\n "+JSON.stringify(e))}Object.defineProperty(r,"__esModule",{value:!0});var u=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var t=arguments[r];for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n])}return e},l="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};r.default=o;var s=t(4),f=n(s),d=t(2),c=n(d),p=t(3),v=t(1),h="",m="none",y="object",g="undefined"!=typeof navigator&&/Android/i.test(navigator.userAgent),b="undefined"!=typeof requestAnimationFrame?requestAnimationFrame:setTimeout}])});
-},{}],235:[function(_dereq_,module,exports){
+},{}],236:[function(_dereq_,module,exports){
 (function(self) {
   'use strict';
 
@@ -33189,7 +33220,7 @@ exports.clearImmediate = typeof clearImmediate === "function" ? clearImmediate :
   self.fetch.polyfill = true
 })(typeof self !== 'undefined' ? self : this);
 
-},{}],236:[function(_dereq_,module,exports){
+},{}],237:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33217,6 +33248,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#address'
@@ -33225,7 +33260,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/address/display.html',
         '<ng-form>' +
@@ -33265,11 +33301,17 @@ module.exports = function(app) {
           '<form-builder-option property="validate.customMessage"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],237:[function(_dereq_,module,exports){
+},{}],238:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33302,6 +33344,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#button'
@@ -33310,7 +33356,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/button/display.html',
         '<ng-form>' +
@@ -33326,6 +33373,16 @@ module.exports = function(app) {
           '<div class="form-group" ng-if="component.action === \'event\'">' +
           '  <label for="event" form-builder-tooltip="The event to fire when the button is clicked.">{{\'Button Event\' | formioTranslate}}</label>' +
           '  <input type="text" class="form-control" id="event" name="event" ng-model="component.event" placeholder="event" />' +
+          '</div>' +
+          '<div class="form-group" ng-if="component.action === \'saveDraft\'">' +
+          '  <label for="event" form-builder-tooltip="Fires a saveDraft event when the button is clicked.">{{\'Button Event\' | formioTranslate}}</label>' +
+          '  <input type="text" class="form-control" id="event" name="event" ng-model="component.event" placeholder="saveDraft" ng-init="component.event=\'saveDraft\'" readOnly="readOnly"/>' +
+          '  <label for="state" form-builder-tooltip="Save the submission in a draft state. Defaults to \'submitted\'. \'draft\' will skip validation.">{{\'Submission State\' | formioTranslate}}</label>' +
+          '  <input type="text" class="form-control" id="state" name="state" ng-model="component.state" placeholder="draft" ng-init="component.state=\'draft\'" readOnly="readOnly"/>' +
+          '  <form-builder-option property="guestDraftOn"></form-builder-option>' +
+          '  <form-builder-option property="draftLoadMsg"></form-builder-option>' +
+          '  <form-builder-option property="draftLoadBtnLabel"></form-builder-option>' +
+          '  <form-builder-option property="draftLoadCancelBtnLabel"></form-builder-option>' +
           '</div>' +
           '<div class="form-group" ng-if="component.action === \'url\'">' +
           '  <label for="url" form-builder-tooltip="Place an Url where the submission will be sent.">{{\'Button Url\'' +
@@ -33359,11 +33416,17 @@ module.exports = function(app) {
           '<form-builder-option property="disableOnInvalid"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],238:[function(_dereq_,module,exports){
+},{}],239:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33430,6 +33493,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#checkbox'
@@ -33438,7 +33505,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/checkbox/display.html',
         '<ng-form>' +
@@ -33484,11 +33552,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],239:[function(_dereq_,module,exports){
+},{}],240:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33520,6 +33594,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ]
       });
@@ -33527,7 +33605,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/columns.html',
         '<div class="row">' +
           '<div class="col-xs-{{column.width || 6}} col-xs-offset-{{column.offset}} col-xs-push-{{column.push}} col-xs-pull-{{column.pull}}" component-form-group" ng-repeat="column in component.columns">' +
@@ -33569,11 +33648,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],240:[function(_dereq_,module,exports){
+},{}],241:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.run([
@@ -33729,7 +33814,7 @@ module.exports = function(app) {
   ]);
 };
 
-},{}],241:[function(_dereq_,module,exports){
+},{}],242:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33748,6 +33833,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#container',
@@ -33759,7 +33848,8 @@ module.exports = function(app) {
 
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/components/container/display.html',
         '<ng-form>' +
         '<form-builder-option property="label"></form-builder-option>' +
@@ -33789,11 +33879,17 @@ module.exports = function(app) {
         '</label>' +
         '</fieldset>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],242:[function(_dereq_,module,exports){
+},{}],243:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33842,6 +33938,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ]
       });
@@ -33849,7 +33949,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/content.html',
         '<div class="form-group">' +
           '<textarea ckeditor="ckeditorOptions" ng-model="component.html"><textarea>' +
@@ -33860,11 +33961,17 @@ module.exports = function(app) {
           '<form-builder-option property="customClass"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],243:[function(_dereq_,module,exports){
+},{}],244:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -33896,6 +34003,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#currency'
@@ -33904,7 +34015,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/currency/display.html',
         '<ng-form>' +
@@ -33940,11 +34052,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],244:[function(_dereq_,module,exports){
+},{}],245:[function(_dereq_,module,exports){
 "use strict";
 var _assign = _dereq_('lodash/assign');
 
@@ -33962,6 +34080,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#custom'
@@ -33995,7 +34117,8 @@ module.exports = function(app) {
 
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/custom/display.html',
         '<ng-form>' +
@@ -34006,11 +34129,17 @@ module.exports = function(app) {
         '</div>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{"lodash/assign":178}],245:[function(_dereq_,module,exports){
+},{"lodash/assign":178}],246:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34059,6 +34188,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#datagrid',
@@ -34070,7 +34203,8 @@ module.exports = function(app) {
 
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/components/datagrid/display.html',
         '<ng-form>' +
         '<form-builder-option property="label"></form-builder-option>' +
@@ -34105,11 +34239,17 @@ module.exports = function(app) {
         '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],246:[function(_dereq_,module,exports){
+},{}],247:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34188,6 +34328,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#datetime'
@@ -34196,7 +34340,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/datetime/display.html',
         '<ng-form>' +
@@ -34288,11 +34433,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],247:[function(_dereq_,module,exports){
+},{}],248:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34324,6 +34475,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#day'
@@ -34332,7 +34487,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/day/display.html',
         '<ng-form>' +
@@ -34373,11 +34529,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],248:[function(_dereq_,module,exports){
+},{}],249:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34406,6 +34568,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#editgrid',
@@ -34417,7 +34583,8 @@ module.exports = function(app) {
 
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/components/editgrid/display.html',
         '<ng-form>' +
         '<form-builder-option property="label"></form-builder-option>' +
@@ -34481,12 +34648,17 @@ module.exports = function(app) {
         '<form-builder-list component="component" form="form" formio="::formio"></form-builder-list>' +
         '</fieldset>'
       );
-
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],249:[function(_dereq_,module,exports){
+},{}],250:[function(_dereq_,module,exports){
 "use strict";
 var _cloneDeep = _dereq_('lodash/cloneDeep');
 var _each = _dereq_('lodash/each');
@@ -34536,7 +34708,7 @@ module.exports = function(app) {
   ]);
 };
 
-},{"lodash/cloneDeep":182,"lodash/each":186}],250:[function(_dereq_,module,exports){
+},{"lodash/cloneDeep":182,"lodash/each":186}],251:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34561,6 +34733,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#fieldset',
@@ -34572,7 +34748,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/fieldset.html',
         '<fieldset>' +
           '<legend ng-if="component.legend">' +
@@ -34595,11 +34772,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],251:[function(_dereq_,module,exports){
+},{}],252:[function(_dereq_,module,exports){
 "use strict";
 var _map = _dereq_('lodash/map');
 module.exports = function(app) {
@@ -34643,6 +34826,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#file'
@@ -34651,7 +34838,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/file/display.html',
         '<ng-form>' +
@@ -34690,11 +34878,17 @@ module.exports = function(app) {
           '<form-builder-option property="validate.customMessage"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{"lodash/map":211}],252:[function(_dereq_,module,exports){
+},{"lodash/map":211}],253:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34719,6 +34913,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#form',
@@ -34794,7 +34992,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/form.html', '<span class="hidden-element-text">{{ form.title }} {{ form.type }}</span>');
 
       // Create the settings markup.
@@ -34816,11 +35015,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],253:[function(_dereq_,module,exports){
+},{}],254:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34849,6 +35054,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#hidden'
@@ -34857,7 +35066,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/hidden.html', '<span class="hidden-element-text">{{ component.label }}</span>');
 
       // Create the settings markup.
@@ -34877,11 +35087,17 @@ module.exports = function(app) {
           '<form-builder-option property="unique"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],254:[function(_dereq_,module,exports){
+},{}],255:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -34902,6 +35118,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#html-element-component'
@@ -34910,7 +35130,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/htmlelement.html',
         '<p ng-if="!component.content">{{ \'HTML Element with no content\' | formioTranslate }}</p><formio-html-element component="component"></div>'
       );
@@ -34939,11 +35160,17 @@ module.exports = function(app) {
           '</div>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],255:[function(_dereq_,module,exports){
+},{}],256:[function(_dereq_,module,exports){
 "use strict";
 var app = angular.module('ngFormBuilder');
 
@@ -34988,7 +35215,7 @@ _dereq_('./panel')(app);
 _dereq_('./table')(app);
 _dereq_('./well')(app);
 
-},{"./address":236,"./button":237,"./checkbox":238,"./columns":239,"./components":240,"./container":241,"./content":242,"./currency":243,"./custom":244,"./datagrid":245,"./datetime":246,"./day":247,"./editgrid":248,"./email":249,"./fieldset":250,"./file":251,"./form":252,"./hidden":253,"./htmlelement":254,"./number":256,"./page":257,"./panel":258,"./password":259,"./phonenumber":260,"./radio":261,"./resource":262,"./select":263,"./selectboxes":264,"./signature":265,"./survey":266,"./table":267,"./textarea":268,"./textfield":269,"./time":270,"./well":271}],256:[function(_dereq_,module,exports){
+},{"./address":237,"./button":238,"./checkbox":239,"./columns":240,"./components":241,"./container":242,"./content":243,"./currency":244,"./custom":245,"./datagrid":246,"./datetime":247,"./day":248,"./editgrid":249,"./email":250,"./fieldset":251,"./file":252,"./form":253,"./hidden":254,"./htmlelement":255,"./number":257,"./page":258,"./panel":259,"./password":260,"./phonenumber":261,"./radio":262,"./resource":263,"./select":264,"./selectboxes":265,"./signature":266,"./survey":267,"./table":268,"./textarea":269,"./textfield":270,"./time":271,"./well":272}],257:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35020,6 +35247,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#number'
@@ -35028,7 +35259,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/number/display.html',
         '<ng-form>' +
@@ -35120,11 +35352,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],257:[function(_dereq_,module,exports){
+},{}],258:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35145,7 +35383,7 @@ module.exports = function(app) {
   ]);
 };
 
-},{}],258:[function(_dereq_,module,exports){
+},{}],259:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35190,6 +35428,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/panel/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#panels',
@@ -35200,7 +35442,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/panel.html',
         '<div class="panel panel-{{ component.theme }}">' +
           '<div ng-if="component.title" class="panel-heading"><h3 class="panel-title">' +
@@ -35256,11 +35499,17 @@ module.exports = function(app) {
           '</div>' +
         '</uib-accordion>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],259:[function(_dereq_,module,exports){
+},{}],260:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35288,6 +35537,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#password',
@@ -35297,9 +35550,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function(
-      $templateCache
-    ) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Disable dragging on password inputs because it breaks dndLists
       var textFieldTmpl = $templateCache.get('formio/components/textfield.html');
       var passwordTmpl = textFieldTmpl.replace(
@@ -35332,11 +35584,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],260:[function(_dereq_,module,exports){
+},{}],261:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35368,6 +35626,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#phonenumber'
@@ -35376,7 +35638,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/phoneNumber/display.html',
         '<ng-form>' +
@@ -35415,11 +35678,17 @@ module.exports = function(app) {
           '<form-builder-option property="validate.customMessage"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],261:[function(_dereq_,module,exports){
+},{}],262:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35451,6 +35720,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#radio'
@@ -35459,7 +35732,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/radio/display.html',
         '<ng-form>' +
@@ -35494,11 +35768,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],262:[function(_dereq_,module,exports){
+},{}],263:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35540,6 +35820,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#resource'
@@ -35548,7 +35832,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/resource/display.html',
         '<ng-form>' +
@@ -35598,11 +35883,17 @@ module.exports = function(app) {
           '<form-builder-option property="validate.customMessage"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],263:[function(_dereq_,module,exports){
+},{}],264:[function(_dereq_,module,exports){
 "use strict";
 var _clone = _dereq_('lodash/clone');
 module.exports = function(app) {
@@ -35635,6 +35926,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         onEdit: ['$scope', 'FormioUtils', function($scope, FormioUtils) {
@@ -35754,7 +36049,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/select/display.html',
         '<ng-form>' +
@@ -35846,6 +36142,52 @@ module.exports = function(app) {
           '<form-builder-option ng-show="component.dataSrc == \'url\'" property="authenticate"></form-builder-option>' +
           '<form-builder-option property="defaultValue"></form-builder-option>' +
           '<form-builder-option property="dbIndex" class="form-builder-premium form-builder-dbindex"></form-builder-option>' +
+            '<uib-accordion>' +
+            '  <div uib-accordion-group heading="Custom Default Value" class="panel panel-default">' +
+            '    <uib-accordion>' +
+            '      <div uib-accordion-group heading="JavaScript Default" class="panel panel-default" is-open="true">' +
+            '        <formio-script-editor rows="5" id="customDefaultValue" name="customDefaultValue" ng-model="component.customDefaultValue" placeholder="/*** Example Code ***/\nvalue = data[\'mykey\'] + data[\'anotherKey\'];"></formio-script-editor>' +
+            '        <small>' +
+            '          <p>Enter custom default value code.</p>' +
+            '          <p>You must assign the <strong>value</strong> variable as the result you want for the default value.</p>' +
+            '          <p>The global variable <strong>data</strong> is provided, and allows you to access the data of any form component, by using its API key.</p>' +
+            '          <p>Also <strong>moment</strong> library is available, and allows you to manipulate dates in a convenient way.</p>' +
+            '          <p>Default Values are only calculated on form load. Use Calculated Value for a value that will update with the form.</p>' +
+            '        </small>' +
+            '      </div>' +
+            '      <div uib-accordion-group heading="JSONLogic Default" class="panel panel-default">' +
+            '        <small>' +
+            '          <p>Execute custom default value using <a href="http://jsonlogic.com/">JSONLogic</a>.</p>' +
+            '          <p>Submission data is available as JsonLogic variables, with the same api key as your components.</p>' +
+            '          <p><a href="http://formio.github.io/formio.js/app/examples/calculated.html" target="_blank">Click here for an example</a></p>' +
+            '        </small>' +
+            '        <textarea class="form-control" rows="5" id="json" name="json" json-input ng-model="component.customDefaultValue" placeholder=\'{ ... }\'></textarea>' +
+            '      </div>' +
+            '    </uib-accordion>' +
+            '  </div>' +
+            '  <div uib-accordion-group heading="Calculated Value" class="panel panel-default">' +
+            '    <uib-accordion>' +
+            '      <div uib-accordion-group heading="JavaScript Value" class="panel panel-default" is-open="true">' +
+            '        <formio-script-editor rows="5" id="calculateValue" name="calculateValue" ng-model="component.calculateValue" placeholder="/*** Example Code ***/\nvalue = data[\'mykey\'] + data[\'anotherKey\'];"></formio-script-editor>' +
+            '        <small>' +
+            '          <p>Enter code to calculate a value.</p>' +
+            '          <p>You must assign the <strong>value</strong> variable as the result you want for the default value.</p>' +
+            '          <p>The global variable <strong>data</strong> is provided, and allows you to access the data of any form component, by using its API key.</p>' +
+            '          <p>Also <strong>moment</strong> library is available, and allows you to manipulate dates in a convenient way.</p>' +
+            '        </small>' +
+            '      </div>' +
+            '      <div uib-accordion-group heading="JSONLogic Value" class="panel panel-default">' +
+            '        <small>' +
+            '          <p>Execute custom calculation logic with JSON and <a href="http://jsonlogic.com/">JSONLogic</a>.</p>' +
+            '          <p>Submission data is available as JsonLogic variables, with the same api key as your components.</p>' +
+            '          <p><a href="http://formio.github.io/formio.js/app/examples/calculated.html" target="_blank">Click here for an example</a></p>' +
+            '        </small>' +
+            '        <textarea class="form-control" rows="5" id="json" name="json" json-input ng-model="component.calculateValue" placeholder=\'{ ... }\'></textarea>' +
+            '      </div>' +
+            '    </uib-accordion>' +
+            '    <form-builder-option property="calculateServer" type="checkbox" label="Calculate on server" tooltip="Perform these calculations on the server as well as the frontend."></form-builder-option>' +
+            '  </div>' +
+            '</uib-accordion>' +
         '</ng-form>'
       );
 
@@ -35859,11 +36201,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{"lodash/clone":181}],264:[function(_dereq_,module,exports){
+},{"lodash/clone":181}],265:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35891,6 +36239,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#selectboxes'
@@ -35899,7 +36251,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/selectboxes/display.html',
         '<ng-form>' +
@@ -35946,11 +36299,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],265:[function(_dereq_,module,exports){
+},{}],266:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -35978,6 +36337,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#signature'
@@ -35986,7 +36349,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/signature/display.html',
         '<ng-form>' +
@@ -36014,11 +36378,17 @@ module.exports = function(app) {
           '<form-builder-option property="validate.customMessage"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],266:[function(_dereq_,module,exports){
+},{}],267:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -36046,6 +36416,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#survey'
@@ -36054,7 +36428,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/survey/display.html',
         '<ng-form>' +
@@ -36087,11 +36462,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],267:[function(_dereq_,module,exports){
+},{}],268:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -36119,6 +36500,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ]
       });
@@ -36126,7 +36511,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       var tableClasses = "{'table-striped': component.striped, ";
       tableClasses += "'table-bordered': component.bordered, ";
       tableClasses += "'table-hover': component.hover, ";
@@ -36160,11 +36546,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],268:[function(_dereq_,module,exports){
+},{}],269:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -36196,6 +36588,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#textarea'
@@ -36236,7 +36632,8 @@ module.exports = function(app) {
   }]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/textarea/display.html',
         '<ng-form>' +
@@ -36327,11 +36724,17 @@ module.exports = function(app) {
         '  </div>' +
         '</uib-accordion>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],269:[function(_dereq_,module,exports){
+},{}],270:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -36362,6 +36765,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#textfield'
@@ -36370,7 +36777,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/textfield/display.html',
         '<ng-form>' +
@@ -36467,11 +36875,17 @@ module.exports = function(app) {
           '<form-builder-option-custom-validation></form-builder-option-custom-validation>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],270:[function(_dereq_,module,exports){
+},{}],271:[function(_dereq_,module,exports){
 "use strict";
 var _cloneDeep = _dereq_('lodash/cloneDeep');
 var _each = _dereq_('lodash/each');
@@ -36495,7 +36909,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/components/time/display.html',
         '<ng-form>' +
           '<form-builder-option property="label"></form-builder-option>' +
@@ -36520,11 +36935,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{"lodash/cloneDeep":182,"lodash/each":186}],271:[function(_dereq_,module,exports){
+},{"lodash/cloneDeep":182,"lodash/each":186}],272:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function(app) {
   app.config([
@@ -36548,6 +36969,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ]
       });
@@ -36555,7 +36980,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/well.html',
         '<div class="well">' +
           '<form-builder-list component="component" form="form" options="options" formio="::formio"></form-builder-list>' +
@@ -36568,11 +36994,17 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '<ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };
 
-},{}],272:[function(_dereq_,module,exports){
+},{}],273:[function(_dereq_,module,exports){
 "use strict";
 /**
   * These are component options that can be reused
@@ -36933,10 +37365,30 @@ module.exports = {
     label: 'Collapsed',
     type: 'checkbox',
     tooltip: 'Component\'s body initially hidden.'
-  }
+  },
+  guestDraftOn: {
+    label: 'Allow Guest to save draft',
+    type: 'checkbox',
+    tooltip: 'Allow non-login users to save draft.'
+  },
+  draftLoadMsg: {
+    label: 'Load Draft Message',
+    placeholder: 'Saved draft found. Load it?',
+    tooltip: 'The confirmation message to load the draft.'
+  },
+  draftLoadBtnLabel: {
+    label: 'Load Draft Button Label',
+    placeholder: 'Yes',
+    tooltip: 'The label of the button to load the draft.'
+  },
+  draftLoadCancelBtnLabel: {
+    label: 'Cancel Load Draft Button Label',
+    placeholder: 'No',
+    tooltip: 'The label of the button to cancel loading the draft.'
+  }  
 };
 
-},{}],273:[function(_dereq_,module,exports){
+},{}],274:[function(_dereq_,module,exports){
 "use strict";
 module.exports = {
   actions: [
@@ -36971,6 +37423,10 @@ module.exports = {
     {
       name: 'oauth',
       title: 'OAuth'
+    },
+    {
+      name: 'saveDraft',
+      title: 'Save Draft'
     }
   ],
   themes: [
@@ -37019,7 +37475,42 @@ module.exports = {
   ]
 };
 
-},{}],274:[function(_dereq_,module,exports){
+},{}],275:[function(_dereq_,module,exports){
+"use strict";
+module.exports = {
+  permission: {
+    create: { title: 'Create Permission' },
+    read: { title: 'Read Permission' },
+    update: { title: 'Update Permission' },
+    delete: { title: 'Delete Permission' }
+  },
+  api: {
+      GET_FORM_LIST : '/v2/forms/simpleList',
+      GET_FORM_FIELDS : '/v2/forms/schema/$PARAM_1/fields',  // param 1 = form ID
+      GET_SITES : '/v2/forms/sites',
+      GET_SITE_ROLES : '/v2/forms/site/$PARAM_1/roles' // param 1 = site Id
+  },
+  template : {
+      PLATFORM_CONFIG_TEMPLATE : {alias: "formio/components/platform/platform.html",
+          content: '' +
+          '<ng-form>' +
+            '<section><h4>Permission</h4>'+      
+                '<platform-permission></platform-permission>' +
+            '</section>'+
+            '<section><h4>Master Profile Mapping</h4>'+      
+                '<platform-master-profile-mapping></platform-master-profile-mapping>' +
+            '</section>'+
+            '<section><h4>Logic</h4>'+      
+              '<platform-on-change-logic></platform-on-change-logic>' +
+              '<platform-on-form-load-logic></platform-on-form-load-logic>' +
+              '<platform-on-populate-logic></platform-on-populate-logic>' +
+            '</section>'+
+          '</ng-form>'
+      }
+  }
+};
+
+},{}],276:[function(_dereq_,module,exports){
 "use strict";
 /*eslint max-statements: 0*/
 var _cloneDeep = _dereq_('lodash/cloneDeep');
@@ -37464,7 +37955,7 @@ module.exports = ['debounce', function(debounce) {
   };
 }];
 
-},{"lodash/capitalize":180,"lodash/cloneDeep":182,"lodash/each":186,"lodash/groupBy":190,"lodash/merge":213,"lodash/omitBy":215,"lodash/upperFirst":226}],275:[function(_dereq_,module,exports){
+},{"lodash/capitalize":180,"lodash/cloneDeep":182,"lodash/each":186,"lodash/groupBy":190,"lodash/merge":213,"lodash/omitBy":215,"lodash/upperFirst":227}],277:[function(_dereq_,module,exports){
 "use strict";
 /**
  * Create the form-builder-component directive.
@@ -37480,7 +37971,7 @@ module.exports = [
   }
 ];
 
-},{}],276:[function(_dereq_,module,exports){
+},{}],278:[function(_dereq_,module,exports){
 "use strict";
 'use strict';
 var utils = _dereq_('formiojs/utils').default;
@@ -37576,7 +38067,7 @@ module.exports = [
   }
 ];
 
-},{"formiojs/utils":1,"lodash/get":189,"lodash/reject":219}],277:[function(_dereq_,module,exports){
+},{"formiojs/utils":1,"lodash/get":189,"lodash/reject":219}],279:[function(_dereq_,module,exports){
 "use strict";
 var _isNumber = _dereq_('lodash/isNumber');
 var _camelCase = _dereq_('lodash/camelCase');
@@ -37664,7 +38155,7 @@ module.exports = [
       var parent = $scope.parent || $scope.component;
       if (parent.type !== 'form' && parent.type !== 'resource' && component.isNew && component.key) {
         $scope.parentKey = parent.key;
-        component.key = $scope.parentKey + _upperFirst(component.key);
+        component.key = ($scope.parentKey||'') + _upperFirst(component.key);
       } else {
         $scope.parentKey = '';
       }
@@ -37922,7 +38413,7 @@ module.exports = [
   }
 ];
 
-},{"lodash/assign":178,"lodash/camelCase":179,"lodash/isNumber":201}],278:[function(_dereq_,module,exports){
+},{"lodash/assign":178,"lodash/camelCase":179,"lodash/isNumber":201}],280:[function(_dereq_,module,exports){
 "use strict";
 module.exports = [
   'formioElementDirective',
@@ -37947,7 +38438,7 @@ module.exports = [
   }
 ];
 
-},{}],279:[function(_dereq_,module,exports){
+},{}],281:[function(_dereq_,module,exports){
 "use strict";
 module.exports = [
   function() {
@@ -37972,7 +38463,7 @@ module.exports = [
   }
 ];
 
-},{}],280:[function(_dereq_,module,exports){
+},{}],282:[function(_dereq_,module,exports){
 "use strict";
 /**
 * This directive creates a field for tweaking component options.
@@ -38063,7 +38554,7 @@ module.exports = ['COMMON_OPTIONS', '$filter', function(COMMON_OPTIONS, $filter)
   };
 }];
 
-},{}],281:[function(_dereq_,module,exports){
+},{}],283:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for editing a component's custom validation.
@@ -38104,7 +38595,7 @@ module.exports = function() {
   };
 };
 
-},{}],282:[function(_dereq_,module,exports){
+},{}],284:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component input format.
@@ -38148,7 +38639,7 @@ module.exports = function() {
   };
 };
 
-},{}],283:[function(_dereq_,module,exports){
+},{}],285:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component inputs' label position.
@@ -38190,7 +38681,7 @@ module.exports = function() {
     };
   };
 
-},{}],284:[function(_dereq_,module,exports){
+},{}],286:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component's key.
@@ -38236,7 +38727,7 @@ module.exports = function() {
   };
 };
 
-},{}],285:[function(_dereq_,module,exports){
+},{}],287:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component's label position.
@@ -38300,7 +38791,7 @@ module.exports = function() {
     };
   };
 
-},{}],286:[function(_dereq_,module,exports){
+},{}],288:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component options' label position.
@@ -38342,7 +38833,7 @@ module.exports = function() {
     };
   };
 
-},{}],287:[function(_dereq_,module,exports){
+},{}],289:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component's shortcut.
@@ -38364,7 +38855,7 @@ module.exports = function() {
   };
 };
 
-},{}],288:[function(_dereq_,module,exports){
+},{}],290:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for a field to edit a component's tags.
@@ -38408,7 +38899,7 @@ module.exports = function() {
   };
 };
 
-},{"lodash/map":211}],289:[function(_dereq_,module,exports){
+},{"lodash/map":211}],291:[function(_dereq_,module,exports){
 "use strict";
 module.exports = [
   function() {
@@ -38430,7 +38921,7 @@ module.exports = [
   }
 ];
 
-},{}],290:[function(_dereq_,module,exports){
+},{}],292:[function(_dereq_,module,exports){
 "use strict";
 /**
  * A directive for a table builder
@@ -38484,7 +38975,7 @@ module.exports = function() {
   };
 };
 
-},{"lodash/merge":213}],291:[function(_dereq_,module,exports){
+},{"lodash/merge":213}],293:[function(_dereq_,module,exports){
 "use strict";
 /**
 * Invokes Bootstrap's popover jquery plugin on an element
@@ -38529,7 +39020,7 @@ module.exports = ['$filter', function($filter) {
   };
 }];
 
-},{}],292:[function(_dereq_,module,exports){
+},{}],294:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive that provides a UI to add {value, label} objects to an array.
@@ -38592,7 +39083,7 @@ module.exports = function() {
   };
 };
 
-},{"lodash/camelCase":179,"lodash/map":211}],293:[function(_dereq_,module,exports){
+},{"lodash/camelCase":179,"lodash/map":211}],295:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function() {
   return {
@@ -38629,7 +39120,7 @@ module.exports = function() {
   };
 };
 
-},{}],294:[function(_dereq_,module,exports){
+},{}],296:[function(_dereq_,module,exports){
 "use strict";
 module.exports = function () {
   return {
@@ -38652,7 +39143,7 @@ module.exports = function () {
   };
 }
 
-},{}],295:[function(_dereq_,module,exports){
+},{}],297:[function(_dereq_,module,exports){
 "use strict";
 /**
  * A directive that provides a UI for multiple masks input.
@@ -38693,7 +39184,7 @@ module.exports = ['COMMON_OPTIONS', function (COMMON_OPTIONS) {
   };
 }];
 
-},{}],296:[function(_dereq_,module,exports){
+},{}],298:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive that provides a UI to add key-value pair object.
@@ -38766,7 +39257,247 @@ module.exports = function() {
   };
 };
 
-},{}],297:[function(_dereq_,module,exports){
+},{}],299:[function(_dereq_,module,exports){
+"use strict";
+/**
+* A directive for selecting the Platform's permission site.
+*/
+
+module.exports = ['PlatformUtils', 'PLATFORM_OPTIONS', '$http', 
+    function(PlatformUtils, PLATFORM_OPTIONS, $http) 
+{
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: true,
+    template: '' +
+      '<div>' +
+        '<br>Select Master Profile Form:' +
+        '<div ng-dropdown-multiselect="" options="_forms" selected-model="component.platform.profile.form"  extra-settings="extraSettingsFormsList" events="_formsEvent" ></div>' +
+        '<br>Select Fields To Map:' +
+        '<div ng-dropdown-multiselect="" options="_formFields" selected-model="component.platform.profile.mapping"  extra-settings="extraSettingsFieldsList"></div>' +
+      '</div>',
+    controller: [
+      '$scope',
+      function($scope) {
+        var _retrieveForms = function() {
+            $http.get(PlatformUtils.getApiUri(PLATFORM_OPTIONS.api.GET_FORM_LIST, [])).then( function(response) {
+                $scope._forms = response.data;
+            });            
+        };
+        
+        var _retrieveFormFields = function(initialLoad) {
+            if ($scope.component.platform.profile.form.length > 0) {
+                if (!initialLoad) { // reset selected mapping
+                    $scope.component.platform.profile.mapping = [];
+                } 
+                $http.get(PlatformUtils.getApiUri(PLATFORM_OPTIONS.api.GET_FORM_FIELDS, [$scope.component.platform.profile.form[0].htmlFormId])).then( function(response) {
+                    $scope._formFields = response.data;
+                });                
+            } else {
+                $scope._formFields = [];
+            }
+        };
+        
+        $scope.component.platform = $scope.component.platform || {};
+        $scope.component.platform.profile = $scope.component.platform.profile || {};
+        $scope.component.platform.profile.form = $scope.component.platform.profile.form || [];
+        $scope.component.platform.profile.mapping = $scope.component.platform.profile.mapping || [];
+
+        _retrieveForms();
+        _retrieveFormFields(true);
+
+        $scope.extraSettingsFormsList = { selectionLimit: 1, selectedToTop: true, showEnableSearchButton: true, 
+          scrollable: true, styleActive:true, idProperty:"htmlFormId", 
+          displayProp: "formName", searchField: "formName", closeOnSelect: true ,
+          template: "{{option.formName}} ({{option.htmlFormId}})" 
+        };       
+        
+        $scope._formsEvent = {
+          onSelectionChanged: _retrieveFormFields
+        };
+        
+        $scope.extraSettingsFieldsList = { selectedToTop: true, showEnableSearchButton: true, 
+          scrollable: true, styleActive:true, idProperty:"id", 
+          displayProp: "label", searchField: "label" ,
+          template: "{{option.label}} ({{option.id}})"
+        };
+
+      }
+    ]
+  };
+}];
+
+},{}],300:[function(_dereq_,module,exports){
+"use strict";
+/**
+* A directive for setting platform logic when the form had loaded.
+*/
+module.exports = function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '' +
+      '<div>' +
+      '<uib-accordion>' +
+      '  <div uib-accordion-group heading="On Change Logic" class="panel panel-default">' +
+      '    <small>' +
+      '      <p>Execute custom validation logic with JSON and <a href="http://jsonlogic.com/">JsonLogic</a>.</p>' +
+      '      <p>Submission data is available as JsonLogic variables, with the same api key as your components.</p>' +
+      '      <p><a href="http://formio.github.io/formio.js/app/examples/conditions.html" target="_blank">Click here for an example</a></p>' +
+      '    </small>' +
+      '    <textarea class="form-control" rows="5" id="onChangeLogic" name="onChangeLogic" json-input ng-model="component.platform.logic.change" placeholder=\'[{condition:{operator:[data1,data2...dataN]},actions:[{type:typeName,params:{paramKey1:paramValue1...paramKeyN:paramValueN}}]}]\'></textarea>' +
+      '  </div>' +
+      '</uib-accordion>' +
+      '</div>'
+  };
+};
+
+},{}],301:[function(_dereq_,module,exports){
+"use strict";
+/**
+* A directive for setting platform logic when the form had loaded.
+*/
+module.exports = function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '' +
+      '<div>' +
+      '<uib-accordion>' +
+      '  <div uib-accordion-group heading="On Form Load Logic" class="panel panel-default">' +
+      '    <small>' +
+      '      <p>Execute custom validation logic with JSON and <a href="http://jsonlogic.com/">JsonLogic</a>.</p>' +
+      '      <p>Submission data is available as JsonLogic variables, with the same api key as your components.</p>' +
+      '      <p><a href="http://formio.github.io/formio.js/app/examples/conditions.html" target="_blank">Click here for an example</a></p>' +
+      '    </small>' +
+      '    <textarea class="form-control" rows="5" id="onFormLoadLogic" name="onFormLoadLogic" json-input ng-model="component.platform.logic.formLoad" placeholder=\'[{condition:{operator:[data1,data2...dataN]},actions:[{type:typeName,params:{paramKey1:paramValue1...paramKeyN:paramValueN}}]}]\'></textarea>' +
+      '  </div>' +
+      '</uib-accordion>' +
+      '</div>'
+  };
+};
+
+},{}],302:[function(_dereq_,module,exports){
+"use strict";
+/**
+* A directive for setting platform logic when the form had loaded.
+*/
+module.exports = function() {
+  return {
+    restrict: 'E',
+    replace: true,
+    template: '' +
+      '<div>' +
+      '<uib-accordion>' +
+      '  <div uib-accordion-group heading="On Populate Logic" class="panel panel-default">' +
+      '    <small>' +
+      '      <p>Execute custom validation logic with JSON and <a href="http://jsonlogic.com/">JsonLogic</a>.</p>' +
+      '      <p>Submission data is available as JsonLogic variables, with the same api key as your components.</p>' +
+      '      <p><a href="http://formio.github.io/formio.js/app/examples/conditions.html" target="_blank">Click here for an example</a></p>' +
+      '    </small>' +
+      '    <textarea class="form-control" rows="5" id="onPopulateLogic" name="onPopulateLogic" json-input ng-model="component.platform.logic.populate" placeholder=\'[{condition:{operator:[data1,data2...dataN]},actions:[{type:typeName,params:{paramKey1:paramValue1...paramKeyN:paramValueN}}]}]\'></textarea>' +
+      '  </div>' +
+      '</uib-accordion>' +
+      '</div>'
+  };
+};
+
+},{}],303:[function(_dereq_,module,exports){
+"use strict";
+/**
+* A directive for editing a component's custom validation.
+*/
+var _camelCase = _dereq_('lodash/camelCase');
+var _startCase = _dereq_('lodash/startCase');
+
+module.exports = ['PlatformUtils', 'PLATFORM_OPTIONS', '$http', 
+    function(PlatformUtils, PLATFORM_OPTIONS, $http) 
+{
+  return {
+    restrict: 'E',
+    replace: true,
+    scope: true,
+    template: '' +
+      '<div>' +
+        '<br>Retrieve roles from site:' +
+        '<div ng-dropdown-multiselect="" options="_sites" selected-model="component.platform.permission.site"  extra-settings="extraSettingsSitesList" events="_sitesListEvents" ></div>' +
+        '<uib-accordion>' +
+            '<div uib-accordion-group heading="Create Permission" class="panel panel-default">' +
+                '<div ng-dropdown-multiselect="" options="_siteRoles" selected-model="component.platform.permission.create"  extra-settings="extraSettings"></div>' +
+            '</div>' +
+        '</uib-accordion>' +
+        '<uib-accordion>' +
+            '<div uib-accordion-group heading="Read Permission" class="panel panel-default">' +
+                '<div ng-dropdown-multiselect="" options="_siteRoles" selected-model="component.platform.permission.read"  extra-settings="extraSettings"></div>' +
+            '</div>' +
+        '</uib-accordion>' +
+        '<uib-accordion>' +
+            '<div uib-accordion-group heading="Update Permission" class="panel panel-default">' +
+                '<div ng-dropdown-multiselect="" options="_siteRoles" selected-model="component.platform.permission.update"  extra-settings="extraSettings"></div>' +
+            '</div>' +
+        '</uib-accordion>' +
+        '<uib-accordion>' +
+            '<div uib-accordion-group heading="Delete Permission" class="panel panel-default">' +
+                '<div ng-dropdown-multiselect="" options="_siteRoles" selected-model="component.platform.permission.delete"  extra-settings="extraSettings"></div>' +
+            '</div>' +
+        '</uib-accordion>' +
+       '</div>',
+    controller: [
+      '$scope','$attrs',
+      function($scope, $attrs) {
+        var _retrieveSites = function() {
+            $http.get(PlatformUtils.getApiUri(PLATFORM_OPTIONS.api.GET_SITES, [])).then( function(response) {
+                $scope._sites = response.data;
+            });            
+        };
+        
+        var _retrieveRoles = function(initialLoad) {
+            if ($scope.component.platform.permission.site.length > 0){
+                if (!initialLoad) { // reset selected mapping
+                    $scope.component.platform.permission.create = [];
+                    $scope.component.platform.permission.read = [];
+                    $scope.component.platform.permission.update = [];
+                    $scope.component.platform.permission.delete = [];
+                }
+                $http.get(PlatformUtils.getApiUri(PLATFORM_OPTIONS.api.GET_SITE_ROLES, [$scope.component.platform.permission.site[0].multiTenantSiteId])).then( function(response) {
+                    $scope._siteRoles = response.data;
+                });
+            } else {
+                $scope._siteRoles = [];
+            }
+        };
+        
+        $scope.component.platform = $scope.component.platform || {};
+        $scope.component.platform.permission = $scope.component.platform.permission || {};
+        $scope.component.platform.permission.site = $scope.component.platform.permission.site || [];
+        $scope.component.platform.permission.create = $scope.component.platform.permission.create || [];
+        $scope.component.platform.permission.read = $scope.component.platform.permission.read || [];
+        $scope.component.platform.permission.update = $scope.component.platform.permission.update || [];
+        $scope.component.platform.permission.delete = $scope.component.platform.permission.delete || [];
+        
+        $scope.extraSettingsSitesList = { selectionLimit: 1, selectedToTop: true, showEnableSearchButton: true, 
+          scrollable: true, styleActive:true, idProperty:"multiTenantSiteId", 
+          displayProp: "siteName", searchField: "siteName", closeOnSelect: true };        
+      
+        $scope.extraSettings = { selectedToTop: true, checkBoxes: true, showEnableSearchButton: true, 
+          scrollable: true, styleActive:true, idProperty:"siteRoleId", 
+          displayProp: "siteRoleName", searchField: "siteRoleName" };
+        
+        $scope._sitesListEvents = {
+          onSelectionChanged: _retrieveRoles
+        };
+
+        _retrieveSites();
+        
+        _retrieveRoles(true);
+          
+      }
+    ]
+  };
+}];
+
+},{"lodash/camelCase":179,"lodash/startCase":220}],304:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive for an input mask for default value.
@@ -38816,7 +39547,7 @@ module.exports = function() {
   };
 };
 
-},{"formiojs/utils":1,"vanilla-text-mask":234}],298:[function(_dereq_,module,exports){
+},{"formiojs/utils":1,"vanilla-text-mask":235}],305:[function(_dereq_,module,exports){
 "use strict";
 /*
 * Prevents user inputting invalid api key characters.
@@ -38839,7 +39570,7 @@ module.exports = function() {
   };
 };
 
-},{}],299:[function(_dereq_,module,exports){
+},{}],306:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive that provides a UI to add {value, label} objects to an array.
@@ -38921,7 +39652,7 @@ module.exports = function() {
   };
 };
 
-},{"lodash/camelCase":179,"lodash/map":211}],300:[function(_dereq_,module,exports){
+},{"lodash/camelCase":179,"lodash/map":211}],307:[function(_dereq_,module,exports){
 "use strict";
 /**
 * A directive that provides a UI to add {value, label} objects to an array.
@@ -39043,7 +39774,7 @@ module.exports = ['BuilderUtils', function(BuilderUtils) {
   }
 ];
 
-},{"lodash/camelCase":179,"lodash/difference":185,"lodash/map":211,"lodash/without":227}],301:[function(_dereq_,module,exports){
+},{"lodash/camelCase":179,"lodash/difference":185,"lodash/map":211,"lodash/without":228}],308:[function(_dereq_,module,exports){
 "use strict";
 'use strict';
 
@@ -39202,7 +39933,29 @@ module.exports = ['FormioUtils', function(FormioUtils) {
   };
 }];
 
-},{"lodash/difference":185,"lodash/range":218}],302:[function(_dereq_,module,exports){
+},{"lodash/difference":185,"lodash/range":218}],309:[function(_dereq_,module,exports){
+"use strict";
+'use strict';
+
+module.exports = ['FormioUtils', 'PLATFORM_OPTIONS', function(FormioUtils, PLATFORM_OPTIONS) {
+
+  function getApiUri(apiUriPattern, params) {
+    var uri = apiUriPattern;
+    if (params && params.constructor === Array) {
+        for (var i = 0; i < params.length; i++) {
+            uri = uri.replace('$PARAM_'+(i+1),params[i]);
+        }        
+    }
+    return uri;
+  }
+
+  return {
+    getApiUri: getApiUri
+  };
+
+}];
+
+},{}],310:[function(_dereq_,module,exports){
 "use strict";
 // Create an AngularJS service called debounce
 module.exports = ['$timeout','$q', function($timeout, $q) {
@@ -39236,7 +39989,7 @@ module.exports = ['$timeout','$q', function($timeout, $q) {
   };
 }];
 
-},{}],303:[function(_dereq_,module,exports){
+},{}],311:[function(_dereq_,module,exports){
 "use strict";
 /*! ng-formio-builder v2.36.1 | https://unpkg.com/ng-formio-builder@2.36.1/LICENSE.txt */
 /*global window: false, console: false, jQuery: false */
@@ -39250,12 +40003,15 @@ var app = angular.module('ngFormBuilder', [
   'ngDialog',
   'ui.bootstrap.accordion',
   'ui.bootstrap.tooltip',
-  'ckeditor'
+  'ckeditor',
+  'angularjs-dropdown-multiselect'
 ]);
 
 app.constant('FORM_OPTIONS', _dereq_('./constants/formOptions'));
 
 app.constant('COMMON_OPTIONS', _dereq_('./constants/commonOptions'));
+
+app.constant('PLATFORM_OPTIONS', _dereq_('./constants/platformOptions'));
 
 app.factory('debounce', _dereq_('./factories/debounce'));
 
@@ -39337,6 +40093,8 @@ app.directive('formBuilderDraggable', function() {
 
 app.factory('BuilderUtils', _dereq_('./factories/BuilderUtils'));
 
+app.factory('PlatformUtils', _dereq_('./factories/PlatformUtils'));
+
 app.directive('formBuilder', _dereq_('./directives/formBuilder'));
 
 app.directive('formBuilderComponent', _dereq_('./directives/formBuilderComponent'));
@@ -39390,6 +40148,16 @@ app.directive('objectBuilder', _dereq_('./directives/objectBuilder'));
 app.directive('formBuilderConditional', _dereq_('./directives/formBuilderConditional'));
 
 app.directive('multiMaskInput', _dereq_('./directives/multiMaskInput'));
+
+app.directive('platformOnChangeLogic', _dereq_('./directives/platformOnChangeLogic'));
+
+app.directive('platformOnFormLoadLogic', _dereq_('./directives/platformOnFormLoadLogic'));
+
+app.directive('platformOnPopulateLogic', _dereq_('./directives/platformOnPopulateLogic'));
+
+app.directive('platformPermission', _dereq_('./directives/platformPermission'));
+
+app.directive('platformMasterProfileMapping', _dereq_('./directives/platformMasterProfileMapping'));
 
 /**
  * This workaround handles the fact that iframes capture mouse drag
@@ -39447,5 +40215,5 @@ app.run([
 
 _dereq_('./components');
 
-},{"./components":255,"./constants/commonOptions":272,"./constants/formOptions":273,"./directives/formBuilder":274,"./directives/formBuilderComponent":275,"./directives/formBuilderConditional":276,"./directives/formBuilderDnd":277,"./directives/formBuilderElement":278,"./directives/formBuilderList":279,"./directives/formBuilderOption":280,"./directives/formBuilderOptionCustomValidation":281,"./directives/formBuilderOptionInputFormat":282,"./directives/formBuilderOptionInputsLabelPosition":283,"./directives/formBuilderOptionKey":284,"./directives/formBuilderOptionLabelPosition":285,"./directives/formBuilderOptionOptionsLabelPosition":286,"./directives/formBuilderOptionShortcut":287,"./directives/formBuilderOptionTags":288,"./directives/formBuilderRow":289,"./directives/formBuilderTable":290,"./directives/formBuilderTooltip":291,"./directives/headersBuilder":292,"./directives/jsonInput":293,"./directives/labelValidator":294,"./directives/multiMaskInput":295,"./directives/objectBuilder":296,"./directives/textMask":297,"./directives/validApiKey":298,"./directives/valueBuilder":299,"./directives/valueBuilderWithShortcuts":300,"./factories/BuilderUtils":301,"./factories/debounce":302,"formiojs/utils":1}]},{},[303])(303)
+},{"./components":256,"./constants/commonOptions":273,"./constants/formOptions":274,"./constants/platformOptions":275,"./directives/formBuilder":276,"./directives/formBuilderComponent":277,"./directives/formBuilderConditional":278,"./directives/formBuilderDnd":279,"./directives/formBuilderElement":280,"./directives/formBuilderList":281,"./directives/formBuilderOption":282,"./directives/formBuilderOptionCustomValidation":283,"./directives/formBuilderOptionInputFormat":284,"./directives/formBuilderOptionInputsLabelPosition":285,"./directives/formBuilderOptionKey":286,"./directives/formBuilderOptionLabelPosition":287,"./directives/formBuilderOptionOptionsLabelPosition":288,"./directives/formBuilderOptionShortcut":289,"./directives/formBuilderOptionTags":290,"./directives/formBuilderRow":291,"./directives/formBuilderTable":292,"./directives/formBuilderTooltip":293,"./directives/headersBuilder":294,"./directives/jsonInput":295,"./directives/labelValidator":296,"./directives/multiMaskInput":297,"./directives/objectBuilder":298,"./directives/platformMasterProfileMapping":299,"./directives/platformOnChangeLogic":300,"./directives/platformOnFormLoadLogic":301,"./directives/platformOnPopulateLogic":302,"./directives/platformPermission":303,"./directives/textMask":304,"./directives/validApiKey":305,"./directives/valueBuilder":306,"./directives/valueBuilderWithShortcuts":307,"./factories/BuilderUtils":308,"./factories/PlatformUtils":309,"./factories/debounce":310,"formiojs/utils":1}]},{},[311])(311)
 });

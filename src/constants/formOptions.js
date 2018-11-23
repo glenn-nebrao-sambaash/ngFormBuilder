@@ -31,6 +31,10 @@ module.exports = {
     {
       name: 'oauth',
       title: 'OAuth'
+    },
+    {
+      name: 'saveDraft',
+      title: 'Save Draft'
     }
   ],
   themes: [

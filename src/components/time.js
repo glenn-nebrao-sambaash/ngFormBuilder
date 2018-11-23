@@ -20,7 +20,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/components/time/display.html',
         '<ng-form>' +
           '<form-builder-option property="label"></form-builder-option>' +
@@ -45,6 +46,12 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

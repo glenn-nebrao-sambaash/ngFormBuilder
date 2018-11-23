@@ -21,6 +21,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#form',
@@ -96,7 +100,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/form.html', '<span class="hidden-element-text">{{ form.title }} {{ form.type }}</span>');
 
       // Create the settings markup.
@@ -118,6 +123,12 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

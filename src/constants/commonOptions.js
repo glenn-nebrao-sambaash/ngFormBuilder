@@ -357,5 +357,25 @@ module.exports = {
     label: 'Collapsed',
     type: 'checkbox',
     tooltip: 'Component\'s body initially hidden.'
-  }
+  },
+  guestDraftOn: {
+    label: 'Allow Guest to save draft',
+    type: 'checkbox',
+    tooltip: 'Allow non-login users to save draft.'
+  },
+  draftLoadMsg: {
+    label: 'Load Draft Message',
+    placeholder: 'Saved draft found. Load it?',
+    tooltip: 'The confirmation message to load the draft.'
+  },
+  draftLoadBtnLabel: {
+    label: 'Load Draft Button Label',
+    placeholder: 'Yes',
+    tooltip: 'The label of the button to load the draft.'
+  },
+  draftLoadCancelBtnLabel: {
+    label: 'Cancel Load Draft Button Label',
+    placeholder: 'No',
+    tooltip: 'The label of the button to cancel loading the draft.'
+  }  
 };

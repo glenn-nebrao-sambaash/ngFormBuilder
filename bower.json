@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "font-awesome": "^4.6.3"
+  },
+  "resolutions": {
+    "angular": "1.7.3"
   }
 }

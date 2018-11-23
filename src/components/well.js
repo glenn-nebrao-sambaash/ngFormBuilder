@@ -20,6 +20,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ]
       });
@@ -27,7 +31,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/well.html',
         '<div class="well">' +
           '<form-builder-list component="component" form="form" options="options" formio="::formio"></form-builder-list>' +
@@ -40,6 +45,12 @@ module.exports = function(app) {
           '<form-builder-option property="tableView"></form-builder-option>' +
         '<ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

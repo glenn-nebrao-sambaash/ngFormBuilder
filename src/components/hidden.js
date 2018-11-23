@@ -25,6 +25,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#hidden'
@@ -33,7 +37,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/hidden.html', '<span class="hidden-element-text">{{ component.label }}</span>');
 
       // Create the settings markup.
@@ -53,6 +58,12 @@ module.exports = function(app) {
           '<form-builder-option property="unique"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

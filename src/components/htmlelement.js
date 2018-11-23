@@ -17,6 +17,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#html-element-component'
@@ -25,7 +29,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       $templateCache.put('formio/formbuilder/htmlelement.html',
         '<p ng-if="!component.content">{{ \'HTML Element with no content\' | formioTranslate }}</p><formio-html-element component="component"></div>'
       );
@@ -54,6 +59,12 @@ module.exports = function(app) {
           '</div>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

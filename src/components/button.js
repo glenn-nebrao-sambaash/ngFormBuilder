@@ -29,6 +29,10 @@ module.exports = function(app) {
           {
             name: 'Conditional',
             template: 'formio/components/common/conditional.html'
+          },
+          {
+            name: 'Platform',
+            template: 'formio/components/platform/platform.html'
           }
         ],
         documentation: 'http://help.form.io/userguide/#button'
@@ -37,7 +41,8 @@ module.exports = function(app) {
   ]);
   app.run([
     '$templateCache',
-    function($templateCache) {
+    'PLATFORM_OPTIONS',
+    function($templateCache, PLATFORM_OPTIONS) {
       // Create the settings markup.
       $templateCache.put('formio/components/button/display.html',
         '<ng-form>' +
@@ -53,6 +58,16 @@ module.exports = function(app) {
           '<div class="form-group" ng-if="component.action === \'event\'">' +
           '  <label for="event" form-builder-tooltip="The event to fire when the button is clicked.">{{\'Button Event\' | formioTranslate}}</label>' +
           '  <input type="text" class="form-control" id="event" name="event" ng-model="component.event" placeholder="event" />' +
+          '</div>' +
+          '<div class="form-group" ng-if="component.action === \'saveDraft\'">' +
+          '  <label for="event" form-builder-tooltip="Fires a saveDraft event when the button is clicked.">{{\'Button Event\' | formioTranslate}}</label>' +
+          '  <input type="text" class="form-control" id="event" name="event" ng-model="component.event" placeholder="saveDraft" ng-init="component.event=\'saveDraft\'" readOnly="readOnly"/>' +
+          '  <label for="state" form-builder-tooltip="Save the submission in a draft state. Defaults to \'submitted\'. \'draft\' will skip validation.">{{\'Submission State\' | formioTranslate}}</label>' +
+          '  <input type="text" class="form-control" id="state" name="state" ng-model="component.state" placeholder="draft" ng-init="component.state=\'draft\'" readOnly="readOnly"/>' +
+          '  <form-builder-option property="guestDraftOn"></form-builder-option>' +
+          '  <form-builder-option property="draftLoadMsg"></form-builder-option>' +
+          '  <form-builder-option property="draftLoadBtnLabel"></form-builder-option>' +
+          '  <form-builder-option property="draftLoadCancelBtnLabel"></form-builder-option>' +
           '</div>' +
           '<div class="form-group" ng-if="component.action === \'url\'">' +
           '  <label for="url" form-builder-tooltip="Place an Url where the submission will be sent.">{{\'Button Url\'' +
@@ -86,6 +101,12 @@ module.exports = function(app) {
           '<form-builder-option property="disableOnInvalid"></form-builder-option>' +
         '</ng-form>'
       );
+      
+      $templateCache.put(
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.alias,
+            PLATFORM_OPTIONS.template.PLATFORM_CONFIG_TEMPLATE.content
+      );
+      
     }
   ]);
 };

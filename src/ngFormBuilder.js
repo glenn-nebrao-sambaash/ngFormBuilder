@@ -10,12 +10,15 @@ var app = angular.module('ngFormBuilder', [
   'ngDialog',
   'ui.bootstrap.accordion',
   'ui.bootstrap.tooltip',
-  'ckeditor'
+  'ckeditor',
+  'angularjs-dropdown-multiselect'
 ]);
 
 app.constant('FORM_OPTIONS', require('./constants/formOptions'));
 
 app.constant('COMMON_OPTIONS', require('./constants/commonOptions'));
+
+app.constant('PLATFORM_OPTIONS', require('./constants/platformOptions'));
 
 app.factory('debounce', require('./factories/debounce'));
 
@@ -97,6 +100,8 @@ app.directive('formBuilderDraggable', function() {
 
 app.factory('BuilderUtils', require('./factories/BuilderUtils'));
 
+app.factory('PlatformUtils', require('./factories/PlatformUtils'));
+
 app.directive('formBuilder', require('./directives/formBuilder'));
 
 app.directive('formBuilderComponent', require('./directives/formBuilderComponent'));
@@ -150,6 +155,16 @@ app.directive('objectBuilder', require('./directives/objectBuilder'));
 app.directive('formBuilderConditional', require('./directives/formBuilderConditional'));
 
 app.directive('multiMaskInput', require('./directives/multiMaskInput'));
+
+app.directive('platformOnChangeLogic', require('./directives/platformOnChangeLogic'));
+
+app.directive('platformOnFormLoadLogic', require('./directives/platformOnFormLoadLogic'));
+
+app.directive('platformOnPopulateLogic', require('./directives/platformOnPopulateLogic'));
+
+app.directive('platformPermission', require('./directives/platformPermission'));
+
+app.directive('platformMasterProfileMapping', require('./directives/platformMasterProfileMapping'));
 
 /**
  * This workaround handles the fact that iframes capture mouse drag
